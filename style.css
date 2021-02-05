@@ -1,0 +1,52 @@
+a {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.pirma {
+    display: inline-block;
+    margin: 5%;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+
+}
+.anim {
+    animation: square-to-circle 3s 1s infinite alternate;
+}
+.animRe{
+    animation: square-to-circle 3s 1s infinite alternate-reverse;
+}
+
+
+@keyframes square-to-circle{
+    0%{
+        border-radius: 0 0 0 0;
+        background-color: purple;
+        transform: rotate(0deg);
+    }
+    25%{
+        border-radius: 50% 0 0 0;
+        background-color: blueviolet;
+        transform: rotate(45deg);
+    }
+    50%{
+        border-radius: 50% 50% 0 0;
+        background-color: violet;
+        transform: rotate(90deg);
+    }
+    75%{
+        border-radius: 50% 50% 50% 0;
+        background-color: pink;
+        transform: rotate(135deg);
+    }
+    100%{
+        border-radius: 50% 50% 50% 50%;
+        background-color: blueviolet;
+        transform: rotate(180deg);
+    }
+}
